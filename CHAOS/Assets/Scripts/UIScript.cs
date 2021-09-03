@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class UIScript : MonoBehaviour
 {
     public string sceneName;
+    public GameObject titlePanel;
+    public bool menuActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +18,16 @@ public class UIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!menuActive)
+        {
+            if (Input.anyKeyDown)
+            {
+                TitleScreen();
+            }
+        }
     }
 
-    public void PlayButton()
+    public void ChangeSceneButton()
     {
         if (sceneName == "")
         {
@@ -34,5 +42,16 @@ public class UIScript : MonoBehaviour
     public void QuitButton()
     {
         Application.Quit();
+    }
+
+    public void TitleScreen()
+    {
+        menuActive = true;
+        titlePanel.SetActive(false);
+    }
+
+    public void PauseButton()
+    {
+        PauseScript.Pause();
     }
 }
