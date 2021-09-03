@@ -1234,11 +1234,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2661fb4013dd54544853de210e121696, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2077,7 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a196d98250e4f6a4e9d2a355fa167082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TestLevelInger
+  sceneName: Gameplay
   titlePanel: {fileID: 1617078841}
   settingsPanel: {fileID: 1219022137}
   menuActive: 0
