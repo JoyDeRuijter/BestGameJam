@@ -7,7 +7,9 @@ public class UIScript : MonoBehaviour
 {
     public string sceneName;
     public GameObject titlePanel;
+    public GameObject settingsPanel;
     public bool menuActive = false;
+    public bool settingsActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +50,12 @@ public class UIScript : MonoBehaviour
     {
         menuActive = true;
         titlePanel.SetActive(false);
+    }
+
+    public void Settings()
+    {
+        settingsActive = !settingsActive;
+        settingsPanel.SetActive(settingsActive);
     }
 
     public void PauseButton()

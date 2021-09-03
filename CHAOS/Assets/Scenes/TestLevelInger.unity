@@ -607,7 +607,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: MainMenu
   titlePanel: {fileID: 0}
+  settingsPanel: {fileID: 0}
   menuActive: 1
+  settingsActive: 0
 --- !u!1 &1203027919
 GameObject:
   m_ObjectHideFlags: 0
